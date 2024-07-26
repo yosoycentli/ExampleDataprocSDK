@@ -20,6 +20,7 @@ class Engine extends SparkProcess with IOUtils {
 
   val OK: Int = 0
   val ERR: Int = -1
+  val DeleteThis: String = "Delete this, it's only a test"
 
   override def runProcess(runtimeContext: RuntimeContext): Int = Try {
     logger.info(s"Process Id: ${runtimeContext.getProcessId}")
